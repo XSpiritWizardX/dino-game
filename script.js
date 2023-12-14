@@ -22,3 +22,5 @@ var checkDead = setInterval(function(){
             alert("u lose.")
     }
 },10);
+// add a score counter
+// distance travel || time === score.
