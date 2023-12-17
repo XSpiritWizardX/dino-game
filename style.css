@@ -12,12 +12,14 @@
 #character{
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-color: rgb(44, 155, 13);
     position: relative;
     top: 150px;
+
 }
 .animate{
     animation: jump 500ms;
+
 }
 @keyframes jump{
     0%{top: 150px;}
@@ -28,13 +30,19 @@
 #block{
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: rgb(173, 19, 93);
     position: relative;
     top: 130px;
     left: 480px;
-    animation: block 1s infinite linear;
+    animation: block .75s infinite linear;
 }
 @keyframes block{
     0%{left: 480px;}
     100%{left: -40px;}
 }
+
+/* .scoreCounter {
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-end;
+} */

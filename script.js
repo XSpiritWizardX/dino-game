@@ -1,6 +1,6 @@
-var character =
-document.getElementById("character");
+var character = document.getElementById("character");
 var block = document.getElementById("block")
+// var scoreCounter = document.getElementById("scoreCounter")
 function jump(){
     character.classList.add('animate');
     setTimeout(function(){
@@ -8,10 +8,11 @@ function jump(){
     },500);
 }
 
-var checkDead = setInterval(function(){
+var isDead = setInterval(function(){
     var characterTop =
     parseInt(window.getComputedStyle(character).
     getPropertyValue("top"));
+
     var blockLeft =
     parseInt(window.getComputedStyle(block).
     getPropertyValue("left"));
@@ -22,5 +23,26 @@ var checkDead = setInterval(function(){
             alert("u lose.")
     }
 },10);
+
+
+
+
+
+//    let el =  constructor (){
+//     setInterval = 1000ms;
+//     while (isDead !== true){
+//         scoreCounter = setInterval;
+//     }
+//     }
+//  function counter (time) {
+
+//  }
+
+// var scoreCounter = (time) => {
+//     let count  = 0;
+//     for(let key of time) {
+//         time ++;
+//     }
+// }
 // add a score counter
 // distance travel || time === score.
